@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>账户中心</title>
+<link href="../css/home.css" rel="stylesheet">
+</head>
+
+<body>
+
+<input id="tSuc" type="button" value="转出成功" /><br><br>
+<input id="tSure" type="button" value="确认转出" />
+
+<!--<div class="operation-tips" style="display:none;">
+	<div class="oper-tips-tit">
+    	<p class="oper-cont">修改成功！</p>
+        <em class="oper-tips-close"></em>
+    </div>
+    <p class="oper-tips-msg">备注信息已经保存成功。</p>
+    <p class="oper-tips-btn">
+    	<a class="oper-tips-op" href="javascript:void(0);">确定</a>
+    </p>
+</div>-->
+
+<!-- 确认转出 -->
+
+<!-- 确认转出 -->
+<div class="operation-tips turn-sure-pop" style="display:none;">
+	<div class="oper-tips-tit">
+    	<p class="oper-cont">转出成功</p>
+        <em class="oper-tips-close"></em>
+    </div>
+    <div class="operation-content">
+    	<div class="turn-sure">
+        	<dl class="t-s-item clearFiex">
+            	<dt class="fl"><span>活期金额：</span></dt>
+                <dd class="fl">
+                	<strong class="or-color">￥<span>156,004.746</span></strong>
+                </dd>
+            </dl>
+            <dl class="t-s-item clearFiex">
+            	<dt class="fl">活期金额：</dt>
+                <dd class="fl t-i">
+                	<input class="h-q-money" id="" type="text" value="" />
+                </dd>
+            </dl>
+            <dl class="t-s-item clearFiex">
+            	<dt class="fl">验证码：</dt>
+                <dd class="fl t-i">
+                	<input class="h-v-code" id="" type="text" value="" />
+                    <a class="a-vcode" href="javascript:void(0);" >获取验证码</a>
+                </dd>
+            </dl>
+            <p class="oper-btn-wrap">
+            	<a class="o-confirm" href="javascript:void(0);">确认</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="o-cancel" href="javascript:void(0);">取消</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- 转出成功 S -->
+<div class="operation-tips turn-sus-pop" style="display:none;">
+	<div class="oper-tips-tit">
+    	<p class="oper-cont">转出成功</p>
+        <em class="oper-tips-close"></em>
+    </div>
+    <div class="operation-content">
+    	<div class="turn-sus">
+        	<em class="icon-suc"></em>
+            <p class="turn-money-info">您已成功转出<span class="or-color">￥<font>100.00</font></span></p>
+            <p class="turn-other-info">转出的银子将转移到您的“账户余额”内。可至“账户总览”内查看您的账户余额。</p>
+        </div>
+        <p class="oper-tips-btn">
+            <a class="oper-tips-op" href="javascript:void(0);">查看账户总览</a>
+        </p>
+    </div>
+</div>
+<!-- 转出成功 E -->
+
+<div class="meba-qr"></div>
+
+</body>
+<script src="../js/sea.js"></script>
+<script>
+seajs.config({
+    alias: {
+      'jquery': '../js/jquery-1.11.1.min',
+	  'acCommon': '../js/acCommon.js'
+    }
+});
+seajs.use(["jquery","acCommon"],function(a,b){
+	
+	$("#tSuc").on("click",function(){
+		openTurn("转出成功","900",function(){
+			alert("ok")	;
+			closeTips();
+		})	
+	})
+	
+	$("#tSure").on("click",function(){
+		openTurnSure("确认转出","",function(){
+			alert("ok");
+			closeTips();
+		})
+	})
+	
+	$(".oper-tips-close").click(function(){
+		closeTips();	
+	})
+	//确认转出
+	function openTurnSure(tit,money,callback){
+		$(".turn-sure-pop").show();
+		$(".meba-qr").show();
+		$(".oper-cont").html(tit)
+		$(".turn-money-info font").html(money);
+		
+		$(".oper-tips-op").click(function(){
+			callback&&callback()//你的操作	
+		})
+	}
+	//转出成功
+	function openTurn(tit,money,callback){
+		$(".turn-sus-pop").show();
+		$(".meba-qr").show();
+		$(".oper-cont").html(tit)
+		$(".turn-money-info font").html(money);
+		
+		$(".oper-tips-op").click(function(){
+			callback&&callback()//你的操作	
+		})
+	}
+	function closeTips(){
+		$(".operation-tips").hide();
+		$(".meba-qr").hide();
+	}
+	
+	//文本框获取焦点 样式
+	b.addBlueBorder();
+
+	
+})
+</script>
+</html>

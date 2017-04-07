@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+.red-colori{}
+.hx-wrap{background: #f8f8f8;}
+.nav-line-hx{font-size: 14px;line-height: 42px;}
+.hx-main{background: #fff;}
+/*我的参与记录s*/
+.mPr-List{
+	padding: 0 33px;
+    background: #fff;
+}
+.mPr-List-item{
+	padding: 33px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+.mPr-one1{width: 852px;}
+.mPr-one2 p{font-size: 14px;margin-bottom: 1px;}
+.mPr-one1 dt{width: 98px;height: 96px;margin-right: 24px;}
+.mPr-one1 dt img{width: 100%;}
+.mPr-one h1{
+	padding-bottom: 6px;
+	font-size: 16px;
+    color: #333;}
+.mPr-one dd{width: 730px;}
+.mPr-ul li{
+	width: 50%;    
+	font-size: 14px;}
+.redColor{color: #ff4b4b;}
+.mPr-checkBtn{color: #4285f4;cursor: pointer;}
+.mPr-numBox{
+	position: absolute;
+    background: #fff;
+    border: 2px solid #dedede;
+    width: 208px;
+    border-radius: 4px;
+    display: none;
+}
+.mPr-closeBtn{
+	position: absolute;
+    right: 8px;
+    top: 8px;
+    display: block;
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background: url(../images/hxbao/hxIcon.png) no-repeat 0 0;
+}
+.mPr-numBox .mPr-numUl{
+	padding: 15px;
+}
+.mPr-numBox .mPr-numUl li{
+	line-height: 26px;
+	text-align: center;
+}
+.hx-oneb{
+	font-size: 14px;
+    margin: 40px 0 14px 0;
+    text-align: center;
+}
+.hx-bot-box{text-align: center;}
+.hx-bot-ul{
+	display: inline-block;
+	margin: 0 auto;
+}
+.hx-bot-ul li{
+	font-size: 14px;
+    color: #999;
+    margin-right: 14px;
+	border-right: 1px solid #E8E8E8;
+	padding-right: 15px;
+}
+.hx-bot-ul li em{
+	display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+    background: url(../images/hxbao/hxIcon.png) no-repeat;
+    background-position:  3px -21px;
+}
+.hx-bot-ul li .imp-icon2{background-position:  3px -43px;}
+.hx-bot-ul li .imp-icon3{background-position:  0 -68px;}
+.hx-bot-ul li .imp-icon4{background-position:  0 -97px;}
+/*我的参与记录e*/
+/*tab s*/
+.hx-content{
+	margin-top: 33px;
+    background: #fff;
+}
+.boin-tab-hx{
+	margin-bottom: -1px;
+	background: #FAFAFA;
+}
+.boin-tab-hx li{
+	float: left;
+	padding: 0 45px;
+	line-height: 52px;
+	font-size: 16px;
+	border: 1px solid #E8E8E8;
+	background: #FAFAFA;
+	border-bottom: none;
+	border-top: 2px solid transparent ;
+	margin-left: -1px;
+
+}
+.boin-tab-hx li.active{
+	color: #ff4b4b;
+	border: 1px solid #E8E8E8;
+	border-top: 2px solid #ff4b4b ;
+	border-bottom: 1px solid #fff;}
+.boin-tab-hx .hx-borRN{border-right: none;}
+.boin-con-box{border: 1px solid #E8E8E8;padding: 30px;}
+.boin-tab-hx{
+	background: #FAFAFA;
+	border-top: 1px solid #E8E8E8;
+}
+.calrule-content{
+	border: 1px solid #e8e8e8;
+    height: 172px;
+    border-left: none;
+    padding: 20px;
+    padding-left: 15px;
+    width: 979px;
+    box-sizing: border-box;
+}
+.calrule-content ul li{
+	    font-size: 16px;
+    line-height: 28px;
+}
+/*tab e*/
+
+/* 切换-购买记录 */
+.b-par-record{ padding-left:124px; position:relative; padding-top:60px;}
+.b-par-record .bpr-list > li{ overflow:hidden; zoom:1; font-size:14px; padding:14px 0; position:relative;}
+.bpr-list .bpr-time{ width:154px; text-align:right; color:#666; padding-right:26px; position:relative;}
+.bpr-list .bpr-time s{ width:12px; height:12px; border:1px solid #dedede; border-radius:50%; position:absolute; top:4px; right:-8px; background-color:#fff;}
+.bpr-list .bpr-time s i{ width:8px; height:8px; background-color:#dedede; border-radius:50%; position:absolute; top:2px; left:2px;}
+.bpr-list .bpr-time s.active{ border:1px solid #ff4b4b;}
+.bpr-list .bpr-time s.active i{ background-color:#ff4b4b;}
+.bpr-con{ border-left:2px solid #dedede; padding-left:18px; margin-top:-6px;}
+.bpr-con > p{ border:2px solid #fff; padding:3px 0 0 8px; width:700px;}
+.bpr-con > div{ border:2px solid #dedede; padding:2px 0 13px 8px; width:700px; position:relative;}
+.bpr-con > div li,.bpr-con > div > p{ line-height:28px;}
+.bpr-con > div ul{ width:650px; overflow:hidden; zoom:1;}
+.bpr-con > div li{ width:128px; float:left;}
+.bpr-line{ position:absolute; top:0; left:180px; width:2px; height:100%; background-color:#dedede;}
+.bpr-con .close-dpr{ position:absolute; top:8px; right:8px; width:14px; height:14px; background:url(../images/hxbao/iconrec.png) no-repeat 0px -66px; cursor:pointer;}
+.b-par-record .bpr-list > li.bpr-l-day{ font-size:24px; color:#666666;}
+.rec-clock{ position:absolute; left:283px; top:15px; width:46px; height:46px; background:url(../images/hxbao/iconrec.png) no-repeat 0px 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

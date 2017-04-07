@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>账户设置</title>
+<link href="css/home.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- header s -->
+<div id="header">
+	<!--头部标题-->
+	<div class="comWidth clearFiex" style="padding-bottom: 10px;">
+		<img src="images/commons/logo.png" class="top_logo"/> 
+		<h1 class="top_logo_tit"><em style="padding-left: 14px;">|</em><span class="lm14">手机号码修改</span></h1>
+	</div>
+</div>
+<!-- header e -->
+<div class="body-wrap">
+	<div class="comWidth clearFiex">
+		<div class=" tm15 bgline">
+			<!--步骤盒子-->
+			<div class="Set_StepsBox">
+				<div class="Set_Stepstop">
+					<p class="botLine"></p>
+					<ul class="clearFiex">
+						<li><a href="javascript:;" class="active">
+							设置新手机号<br />
+							<span class="numIcon numIcon1"></span>
+						</a></li>
+						<li><a href="javascript:;">
+							修改手机号<br />
+							<span class="numIcon numIcon_check2"></span>
+						</a></li>
+						<li><a href="javascript:;">
+							设置成功<br />
+							<span class="numIcon numIcon_gray3"></span>
+						</a></li>
+					</ul>
+				</div>
+				<div class="Set_StepsCon">
+					<div class="ssConBox ssConBox_tie"  style="height: 213px;">
+						<div class="jumpBox">
+							<div class="loader" >
+								    <div class="ball-spin-fade-loader">
+								        <div></div>
+								        <div></div>
+								        <div></div>
+								        <div></div>
+								        <div></div>
+								        <div></div>
+								        <div></div>
+								        <div></div>
+								    </div>
+								</div>
+								<p class="sucInfoAn">正在跳转，请稍后……</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="hr60"></div>
+    <div id="footer">
+    	<p class="bot_addrs">
+			北京恒善信诚科技有限公司   
+			<span> ©2014-2015 songshubank.com.All Rights Reserved</span>    			<span>京ICP备15037970号</span>
+		</p>
+	</div>
+</body>
+<script src="js/sea.js"></script>
+<script>
+seajs.config({
+    alias: {
+      'jquery': './js/jquery-1.11.1.min',
+	  'acCommon': './js/acCommon.js',
+	  'myValidate':'./js/myValidate.js'
+    }
+});
+seajs.use(["jquery","acCommon","myValidate"],function(a,b,c){
+	
+	//我要理财
+	b.tNavList();
+	//我的账户
+	b.userArea();
+	$("#newPhone").on("blur",function(){
+		c.mobile($("#newPhone").val(),function(){
+			c.fnInfo($("#newPhone").siblings(".vf_info"),"手机号不正确");
+		})
+	})
+	
+	$(".ss_btn").on("click",function(){
+		c.mobile($("#newPhone").val(),function(){
+			c.fnInfo($("#newPhone").siblings(".vf_info"),"手机号不正确");
+		})
+	})
+	
+	
+})
+
+
+</script>
+</html>

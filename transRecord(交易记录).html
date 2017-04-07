@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>账户中心</title>
+<link href="css/home.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- header s -->
+<div id="header">
+	<div class="ac-top-info-wrap">
+    	<div class="ac-top-info clearFiex comWidth">
+            <div class="fl ac-text clearFiex">
+                <p class="tel fl">理财服务热线： 400-010-5577 |  借款服务热线 ：400-010-6585</p> 
+                <div class="focus fl">
+                	关注我们：
+                    <span class="weixin"></span>
+                    <span class="weibo"></span>
+                </div>
+            </div>
+            <div class="fr ac-links">
+            	<a href="#" target="_blank" class="or-color">新手指引</a>｜
+            	<a href="#" target="_blank" class="phone-down"><span></span>移动端下载</a>｜
+            	<a href="#" target="_blank">帮助中心</a>
+            </div>
+        </div>
+    </div>
+    <div class="ac-nav comWidth clearFiex">
+    	<div class="ac-logo fl"><img src="images/account/logo.png" alt="松鼠金融" /></div>
+        <ul class="ac-nav-list clearFiex fl">
+        	<li><a href="#" target="_blank">首页</a></li>
+        	<li class="">
+            	<a href="#" target="_blank">我要理财</a><em class="triangle_bottom_orange"></em>
+                <ol>
+                	<li><a href="#" target="_blank">快赚</a><span class="ac-i-s"><i class="ac-i-c">◇</i></span></li>
+                	<li><a href="#" target="_blank">大赚</a></li>
+                	<li><a href="#" target="_blank">特赚</a></li>
+                </ol>
+            </li>
+        	<li><a href="#" target="_blank">我要借款</a></li>
+        	<li><a href="#" target="_blank">安全保障</a></li>
+        	<li><a href="#" target="_blank">关于我们</a></li>                            
+        </ul>
+        <div class="user-area fr">
+        	<div class="user-ac">
+            	<span></span>
+                <div class="user-ac-list">
+                	我的账户
+                    <em class="triangle_bottom_orange"></em>
+                    <ul class="user-ac-u">
+                    	<li><a href="#" target="_blank">账户总览</a></li>
+                    	<li><a href="#" target="_blank">充值</a></li>
+                    	<li><a href="#" target="_blank">消息中心</a></li>
+                    	<li><a href="#" target="_blank">安全退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header e -->
+<!-- 账户中心导航 s -->
+<div class="user-nav-wrap">
+	<ul class="comWidth clearFiex">
+    	<li><a href="#">账户总览</a></li>
+    	<li class="active"><a href="#">充值提现</a></li>
+    	<li><a href="#">我要理财</a></li>
+    	<li><a href="#">我的借款</a></li>
+    	<li><a href="#">交易记录</a></li>
+    	<li><a href="#">奖励管理</a></li>
+    	<li><a href="#">邀请好友</a></li>
+    	<li><a href="#">安全中心</a></li>
+    	<li><a href="#">消息中心</a></li>
+    </ul> 
+</div>
+<!-- 账户中心导航 e -->
+<div class="body-wrap">
+	<div class="ac-user-info comWidth clearFiex">
+	 	<p class="totlAcc"><em class="iconq"></em>账户总额：<span class="totA">13,000.00</span>
+	 		<span class="btnBox">
+	 			<a href="javascript:;" class="btn">充值</a>
+	 			<a href="javascript:;" class="btn tx_Btn">提现</a>
+	 		</span>
+	 	</p>
+	</div>
+    <div class="ac-user-info comWidth clearFiex tm15">
+	        <ul class="list_tab_check  clearFiex">
+	            <li class="one">项目类型</li>
+	            <li><a class="check" href="javascript:;">全部</a></li>
+	            <li><a href="javascript:;">充值</a></li>
+	            <li><a href="javascript:;">提现</a></li>
+	            <li><a href="javascript:;">投资</a></li>
+	            <li><a href="javascript:;">收益</a></li>
+	            <li><a href="javascript:;">奖励</a></li>
+	        </ul>
+	       
+	        <ul class="list_tab_check clearFiex">
+	            <li class="one">时间范围</li>
+		            <li>
+					<span class="lm14">
+						<input class="Wdate Wdate1" type="text" id="dStar" readonly>
+						<em>-</em>
+						<input class="Wdate Wdate1" type="text" id="dEnd" readonly>
+					</span>
+				</li>
+				<li class="lm20"><a href="javascript:;">最近一周</a></li>
+	            <li><a href="javascript:;">最近一个月</a></li>
+	            <li><a href="javascript:;">最近一年</a></li>
+	            <li class="one"><em class="qry_btn">查询</em></li>
+	        </ul>
+	        
+	        
+    </div>
+    <!--对应列表-->
+    <div class="comWidth tm15">
+    	<table border="1" cellspacing="1" cellpadding="1" class="ca-table">
+    		<thead>
+    			<th>交易时间</th>
+    			<th>交易对象</th>
+	    		<th>交易类型</th>
+	    		<th>交易金额</th>
+	    		<th>账户余额（元）</th>
+	    		<th>状态</th>
+    		</thead>
+    		<tbody>
+    			<tr>
+	    			<td>2015年11月11日 19:42</td>
+	    			<td class="td_hove"><a href="javascript:;">广东知名贸易企业经营资金流转（三期）_20151102-01</a></td>
+	    			<td>投资</td>
+	    			<td class="orgCol">－1,000.00</td>
+	    			<td class="orgCol">5,000.00</td>
+	    			<td>成功</td>
+	    		</tr>
+	    		<tr>
+	    			<td>2015年11月11日 19:42</td>
+	    			<td class="td_hove"><a href="javascript:;">广东知名贸易企业经营资金流转（三期）_20151102-01</a></td>
+	    			<td>投资</td>
+	    			<td class="orgCol">－1,000.00</td>
+	    			<td class="orgCol">5,000.00</td>
+	    			<td>成功</td>
+	    		</tr>
+	    		<tr>
+	    			<td>2015年11月11日 19:42</td>
+	    			<td class="td_hove"><a href="javascript:;">广东知名贸易企业经营资金流转（三期）_20151102-01</a></td>
+	    			<td>投资</td>
+	    			<td class="orgCol">－1,000.00</td>
+	    			<td class="orgCol">5,000.00</td>
+	    			<td>成功</td>
+	    		</tr>
+	    		<tr>
+	    			<td>2015年11月11日 19:42</td>
+	    			<td class="td_hove"><a href="javascript:;">广东知名贸易企业经营资金流转（三期）_20151102-01</a></td>
+	    			<td>投资</td>
+	    			<td class="orgCol">－1,000.00</td>
+	    			<td class="orgCol">5,000.00</td>
+	    			<td>成功</td>
+	    		</tr>
+	    		<tr>
+	    			<td>2015年11月11日 19:42</td>
+	    			<td class="td_hove"><a href="javascript:;">广东知名贸易企业经营资金流转（三期）_20151102-01</a></td>
+	    			<td>投资</td>
+	    			<td class="orgCol">－1,000.00</td>
+	    			<td class="orgCol">5,000.00</td>
+	    			<td>成功</td>
+	    		</tr>
+	    		<tr>
+	    			<td>2015年11月11日 19:42</td>
+	    			<td class="td_hove"><a href="javascript:;">广东知名贸易企业经营资金流转（三期）_20151102-01</a></td>
+	    			<td>投资</td>
+	    			<td class="orgCol">－1,000.00</td>
+	    			<td class="orgCol">5,000.00</td>
+	    			<td>成功</td>
+	    		</tr>
+    		</tbody>
+    	</table>
+    	<div class="page-nav-box">
+    		<p>
+    			<a href="javascript:;" class="pageBtn">首页</a>
+    			<a href="javascript:;" class="pageBtn">上一页</a>
+    			<a href="javascript:;" class="pageBtn">第 1 页</a>
+    			<a href="javascript:;" class="pageBtn">下一页</a>
+    			<a href="javascript:;" class="pageBtn">尾页</a>
+    			<span>
+	    			<em>共16页</em> | <em>2页</em>
+	    		</span>
+    		</p>
+    	</div>
+    </div>
+    <div class="hr60"></div>
+    <div id="footer">
+		<div class="footer-links">
+	    	<div class="comWidth clearFiex">
+	        	<div class="footer-dl-box fl">
+	                <dl>
+	                    <dt><a href="#" target="_blank">关于我们</a></dt>
+	                    <dd><a href="#" target="_blank">公司介绍</a></dd>
+	                    <dd><a href="#" target="_blank">平台公告</a></dd>
+	                    <dd><a href="#" target="_blank">加入我们</a></dd>
+	                    <dd><a href="#" target="_blank">联系我们</a></dd>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#" target="_blank">安全保障</a></dt>
+	                    <dd><a href="#" target="_blank">债权保障</a></dd>
+	                    <dd><a href="#" target="_blank">平台保障</a></dd>
+	                    <dd><a href="#" target="_blank">技术保障</a></dd>
+	                    <dd><a href="#" target="_blank">法律保障</a></dd>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#" target="_blank">帮助中心</a></dt>
+	                    <dd><a href="#" target="_blank">新手指引</a></dd>
+	                    <dd><a href="#" target="_blank">常见问题</a></dd>
+	                    <dd><a href="#" target="_blank">名词解释</a></dd>
+	                </dl>
+	            </div>
+	            <div class="contact-information fl">
+	            	<div class="c-i-item ci-lc">
+	                	<p class="c-i-title">理财服务热线：</p>
+	                    <p class="c-i-info">400-010-5577</p>
+	                </div>
+	                <div class="c-i-item">
+	                	<p class="c-i-title">理财服务热线：</p>
+	                    <p class="c-i-info">400-010-5577</p>
+	                </div>
+	            </div>
+	            <ul class="f-qr-list">
+	            	<li>
+	                	<img src="images/QRS/licaifuwuhao.jpg" alt="" />
+	                    <p>理财－微信服务号</p>
+	                </li>
+	            	<li>
+	                	<img src="images/QRS/licaiApp.jpg" alt="" />
+	                    <p>理财－客户端下载</p>
+	                </li>
+	            	<li>
+	                	<img src="images/QRS/jiekuanApp.jpg" alt="" />
+	                    <p>借款－微信服务号</p>
+	                </li>
+	            	<li>
+	                	<img src="images/QRS/jiekuanfuwu.jpg" alt="" />
+	                    <p>借款－微信服务号</p>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	    <div class="footer-bottom-info">
+	    	<p class="comWidth">北京恒善信诚科技有限公司&nbsp;&nbsp;&nbsp;©2015 songshubank.com&nbsp;All Rights Reserved&nbsp;&nbsp;&nbsp;京ICP备15037970号&nbsp;&nbsp;&nbsp;京公网安备11010802018006</p>
+	        <div class="footer-verification-v">
+	        	<a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	        </div>
+	    </div>
+	</div>
+</div>
+</body>
+<script src="js/sea.js"></script>
+<script src="My97DatePicker/WdatePicker.js"></script>
+<script>
+
+seajs.config({
+    alias: {
+      'jquery': './js/jquery-1.11.1.min',
+	  'acCommon': './js/acCommon.js',
+	  'My97': './My97DatePicker/WdatePicker.js'
+    }
+});
+seajs.use(["jquery","acCommon","My97"],function(a,b){
+	//我要理财
+	b.tNavList();
+	//我的账户
+	b.userArea();
+	//隔行变色
+	b.tjTypeinterColor("ca-table","#f9fbfa");
+	//状态选择
+	b.statSelet();
+	//时间选择
+	b.getMy97Date("dStar","dEnd",function(){
+		console.log("ssss")	
+	});
+	
+	
+	
+})
+</script>
+</html>

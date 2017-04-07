@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>账户中心</title>
+<link href="css/home.css" rel="stylesheet">
+</head>
+
+<body>
+
+<a href="javascript:;" class="iCalculator">计算器</a>
+<style>
+/* 计算器 S */
+.gain-cal-wrap{ display:none; padding:10px 50px 46px 58px; width:572px; background-color:#f2f2f2; font-size:14px; color:#888; border-radius:6px; position:fixed; top:50%; left:50%; margin-top:-217px; margin-left:-340px; z-index:9999999; animation:bigSma .5s ease-in-out; -webkit-animation:bigSma .5s ease-in-out;}
+.gain-cal-wrap .close-gain{ position:absolute; top:10px; right:10px; width:15px; height:15px; background:url(/images/account/BombBg.png) no-repeat 0px 0px;}
+.ac-txt-area{ overflow:hidden; zoom:1; padding:39px 0px;}
+.ac-txt-area .ac-tit{ padding:0px 12px 0px 50px; position:relative; line-height:40px;}
+.ac-txt-area .ac-tit em{ background:url(../images/account/acIcons.png) no-repeat 0px -122px; width:40px; height:40px; position:absolute; top:0px; left:0px;}
+.ac-txt-area input{ border:1px solid #dcdcdc; border-radius:3px; width:308px; padding:7px 10px; box-shadow:inset 1px 2px #f7f7f7;}
+.ac-txt-area .ac-dy{ line-height:40px; padding-left:15px;}
+
+.agin-cal-item{ overflow:hidden; zoom:1; padding:3px 0px;}
+.agin-cal-item .agin-cal-isp{ width:128px; padding-right:10px;}
+.agin-cal-item strong{ border:1px solid #bfbfbf; background-color:#e0e0e0; height:8px; overflow:hidden; border-radius:3px; width:318px; position:relative; margin-top:6px;}
+.agin-cal-item strong em{ position:absolute; top:0px; left:0px; height:8px; border-radius:3px; width:0px; background-color:#fe7f41;}
+.agin-cal-item.agin-cal-kz{ border-top:1px dashed #ddd; padding-top:15px; margin-top:17px;}
+.agin-cal-btn{}
+.agin-cal-item .agin-money{ padding-left:15px;}
+
+.agin-cal-btn strong{ border-color:#d8d8d8; background-color:#e4e4e4; overflow:visible;}
+.agin-cal-btn strong em{ background-color:#f8f8f8;}
+.agin-cal-btn strong span{ position:absolute; top:-8px; left:-4px; width:22px; height:22px; border-radius:11px; border:1px solid #c1c1c1; background-color:#c1c1c1; cursor:pointer;
+	background:-moz-linear-gradient(top,#fcfbfb,#fcfbfb);
+	background:-webkit-linear-gradient(top,#fcfbfb,#fcfbfb);
+	background:-ms-linear-gradient(top,#fcfbfb,#fcfbfb);
+	background:linear-gradient(top,#fcfbfb,#fcfbfb);
+	-ms-filter:"progid:DXlmageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fcfbfb,endColorstr=#fcfbfb)";
+	+background:#fcfbfb;}
+.agin-cal-btn strong span i{ position:absolute; top:3px; left:3px; width:14px; height:14px; border:1px solid #e1e1e1; border-radius:7px;
+	background:-moz-linear-gradient(top,#e1e1e0,#fefefe);
+	background:-webkit-linear-gradient(top,#e1e1e0,#fefefe);
+	background:-ms-linear-gradient(top,#e1e1e0,#fefefe);
+	background:linear-gradient(top,#e1e1e0,#fefefe);
+	-ms-filter:"progid:DXlmageTransform.Microsoft.gradient(GradientType=0,startColorstr=#fefefe,endColorstr=#e1e1e0)";
+	+background:#e1e1e0;}
+.agin-cal-item{}
+.agin-cal-item .agin-days{ width:500px; height:20px; line-height:20px; width:100%;}
+.agin-cal-item .agin-days font{ height:20px; line-height:20px; position:absolute; top:0px; position:relative;}
+.agin-cal-item .agin-days7{ left:138px;}
+.agin-cal-item .agin-days15{ left:256px;}
+.agin-cal-item .agin-days30{ left:382px;}
+/* 计算器 E */
+</style>
+<!-- 收益计算器 S -->
+<div class="gain-cal-wrap" style="display:none">
+	<a class="close-gain" href="javascript:void(0);"></a>
+	<div class="ac-txt-area">
+    	<span class="ac-tit fl"><em></em>投资金额</span>
+        <input id="gainIpt" class="fl" data-money="0" type="text" value="100" />
+        <span class="ac-dy fl">元</span>
+    </div>
+    <ul class="gain-cal-list">
+    	<li>
+        	<div class="agin-cal-item">
+            	<span class="agin-cal-isp fl">大赚 (12个月 , 11%)</span>
+                <strong class="fl"><em data-num_color="100" class="sj-or-s"></em></strong>
+                <font id="da12" class="agin-money or-color fl">0.00元</font>
+            </div>
+        </li>
+    	<li>
+        	<div class="agin-cal-item">
+            	<span class="agin-cal-isp fl">大赚 (9个月 , 10%)</span>
+                <strong class="fl"><em data-num_color="80" class="sj-or-s"></em></strong>
+                <font id="da9" class="agin-money or-color fl">0.00元</font>
+            </div>
+        </li>
+    	<li>
+        	<div class="agin-cal-item">
+            	<span class="agin-cal-isp fl">特赚 (6个月 , 12%)</span>
+                <strong class="fl"><em data-num_color="80" class="sj-or-s"></em></strong>
+                <font id="te6" class="agin-money or-color fl">0.00元</font>
+            </div>
+        </li>
+    	<li>
+        	<div class="agin-cal-item">
+            	<span class="agin-cal-isp fl">大赚 (6个月 , 9%)</span>
+                <strong class="fl"><em data-num_color="60" class="sj-or-s"></em></strong>
+                <font id="da6" class="agin-money or-color fl">0.00元</font>
+            </div>
+        </li>
+    	<li>
+        	<div class="agin-cal-item">
+            	<span class="agin-cal-isp fl">大赚 (3个月 , 8%)</span>
+                <strong class="fl"><em data-num_color="40" class="sj-or-s"></em></strong>
+                <font id="da3" class="agin-money or-color fl">0.00元</font>
+            </div>
+        </li>
+    	<li>
+        	<div class="agin-cal-item agin-cal-kz">
+            	<span class="agin-cal-isp fl">快赚 (<i id="title0">7</i>天 , 7%)</span>
+                <strong class="fl"><em data-num_color="50" class="sj-or-s"></em></strong>
+                <font id="kuai1" class="agin-money or-color fl">0.00元</font>
+            </div>
+            <div class="agin-cal-item agin-cal-btn">
+            	<span class="agin-cal-isp fl">&nbsp;</span>
+                <strong id="bar0" class="fl"><em style=" width:0px;" data-width="1"></em><span id="btn0"><i></i></span></strong>
+                <p class="agin-days fl"><font class="agin-days7">7天</font><font class="agin-days15">15天</font><font class="agin-days30">30天</font></p>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- 收益计算器 E -->
+</body>
+<script src="js/sea.js"></script>
+<script>
+seajs.config({
+    alias: {
+      'jquery': './js/jquery-1.11.1.min',
+	  'acCommon': './js/acCommon.js',
+	  'calculator': './js/calculator'
+    }
+});
+seajs.use(["jquery","acCommon","echarts","calculator"],function(a,b,c,d){
+	
+
+	
+})
+</script>
+</html>

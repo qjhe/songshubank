@@ -1,0 +1,102 @@
+<#import "/account/common/header.ftl" as h>
+<#import "/account/common/footer.ftl" as f>
+<#import "/account/common/navigate.ftl" as n>
+
+<@h.header title="奖励管理" />
+
+<@n.navigate />
+
+<div class="body-wrap">
+    <div class="comWidth clearFiex tm15">
+		<ul class="boin-tab">
+            <li class="active" data-type="1"><a href="javascript:;">加息券</a><em>|</em></li>
+            <li data-type="2"><a href="javascript:;">投资红包</a><em>|</em></li>
+            <li data-type="3"><a href="javascript:;">现金红包</a><em>|</em></li>
+            <li data-type="4"><a href="javascript:;">体验券</a></li>
+        </ul>
+        <!-- 奖励对应的状态及详情 s -->
+	    <div class="boin-con-box">
+        	<!--加息券-->
+        	<div class="boin-con-item"> 
+        		<ul class="list_tab_check boin-item-check clearFiex">
+		            <li class="Nocol">状态:</li>
+		            <!--li><a class="check" href="javascript:;" data-state="0">全部<em>(2)</em></a></li-->
+		            <li><a class="check" href="javascript:;" data-state="1">未使用<em><#if interest?? && interest != '0'>(${interest!""})</#if></em></a></li>
+		            <li><a href="javascript:;" data-state="2">已使用<!--em>(2)</em--></a></li>
+		            <li><a href="javascript:;" data-state="3">已过期<!--em>(2)</em--></a></li>
+		        </ul>
+		        <div class="boin-item-cont" id="interest_list_tbody">
+		        </div>
+        	</div>
+        	<!--投资红包-->
+        	<div class="boin-con-item" style="display: none;">
+        		<ul class="list_tab_check boin-item-check clearFiex">
+		            <li class="Nocol">状态:</li>
+		            <li><a class="check" href="javascript:;" data-state="1">未使用<em><#if voucher?? && voucher != '0'>(${voucher!""})</#if></em></a></li>
+		            <li><a href="javascript:;" data-state="2">已使用<!--em>(1)</em--></a></li>
+		            <li><a href="javascript:;" data-state="3">已过期<!--em>(1)</em--></a></li>
+		        </ul>
+		        <div class="boin-item-cont" id="voucher_list_tbody">
+		        </div>
+        	</div>
+        	<!--现金红包-->
+        	<div class="boin-con-item" style="display: none;">
+        		<ul class="list_tab_check boin-item-check clearFiex">
+		            <li class="Nocol">状态:</li>
+		            <li><a class="check" href="javascript:;" data-state="1">未使用<em><#if cash?? && cash != '0'>(${cash!""})</#if></em></a></li>
+		            <li><a href="javascript:;" data-state="2">已使用<!--em>(3)</em--></a></li>
+		            <li><a href="javascript:;" data-state="3">已过期<!--em>(3)</em--></a></li>
+		        </ul>
+		        <div class="boin-item-cont" id="cash_list_tbody">
+		        </div>
+        	</div>
+        	<!--体验券-->
+        	<div class="boin-con-item" style="display: none;">
+        		<div class="totBox">
+        			<p class="totlAcc tyCard" style="line-height: 70px;padding-left: 37px;">
+        				<!--<em class="icon_q">--></em>体验券金额：<span class="totA">${(ea.account?string.currency)!"0.00"}</span>
+	        			<span class="lm20">体验券收益:<em class="pricSty">${(ea.profit?string.currency)!"0.00"}</em></span>
+	        			<span class="lm20">可提取收益:<em class="pricSty">${(ea.availableProfit?string.currency)!"0.00"}</em></span>
+				 		<span class="btnBox">
+				 			<#if ea?? && (ea.availableProfit) gt 0 && (ea.profit) gt 0>
+				 				<a href="javascript:void(0);" id="xpGoldWithdraw" data-temp1="${(ea.profit)!"0.00"}" data-temp2="${(ea.availableProfit)!"0.00"}" class="btn">立即提现</a>	
+				 			<#else>
+				 				<a href="javascript:;" class="gryBtn">立即提现</a>
+				 			</#if>
+				 		</span>
+				 	</p>
+				 	<!--<div class="tipQuestion">
+					 		<div class="tqBox">
+					 			<ul>
+						 			<li><span class="tqTit">累计总额:</span><span class="or-color">¥39，00.00</span></li>
+						 			<li><span class="tqTit">快赚投资本金：</span><span class="or-color">¥39，00.00</span></li>
+						 			<li><span class="tqTit">大赚投资本金:</span><span class="or-color">¥39，00.00</span></li>
+						 			<li style="border:0;"><span class="tqTit">特赚投资本金：</span><span class="or-color">¥39，00.00</span></li>
+						 		</ul>
+						 		<p>体验券金额自动投标“松鼠金融体验标”，立即计息，投资期限届满后，本金将被系统回收，所获得收益计入投资人体验劵收益账户。</p>
+						 		<em class="sq-sj"></em>
+					 		</div>
+        			</div>-->
+        		<ul class="list_tab_check boin-item-check clearFiex">
+		            <li class="Nocol">状态:</li>
+		            <li><a class="check" href="javascript:;" data-state="1">投资中<em><#if experience?? && experience != '0'>(${experience!""})</#if></em></a></li>
+		            <li><a href="javascript:;" data-state="2">投资完成</a></li>
+		        </ul>
+		        <div class="boin-item-cont" id="coupon_list_tbody">
+		        </div>
+        	</div>
+	    </div>
+	    <!-- 奖励对应的状态及详情 e -->
+	    
+	    <!-- 分页 -->
+		<div class="page-nav-box" id="kkpager">
+    	</div>
+    </div>
+    <div class="hr60"></div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="${request.getContextPath()}/js/plugins/pagination/kkpager.css" />
+<script type="text/javascript" src="${request.getContextPath()}/js/plugins/pagination/kkpager.min.js" type="text/javascript"></script>
+<script src="${request.getContextPath()}/js/account/incentive.js" type="text/javascript"></script>
+
+<@f.footer />

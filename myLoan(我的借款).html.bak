@@ -1,0 +1,481 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>账户中心</title>
+<link href="css/home.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- header s -->
+<div id="header">
+	<div class="ac-top-info-wrap">
+    	<div class="ac-top-info clearFiex comWidth">
+            <div class="fl ac-text clearFiex">
+                <p class="tel fl">理财服务热线： 400-010-5577 |  借款服务热线 ：400-010-6585</p> 
+                <div class="focus fl">
+                	关注我们：
+                    <span class="weixin"></span>
+                    <span class="weibo"></span>
+                </div>
+            </div>
+            <div class="fr ac-links">
+            	<a href="#" target="_blank" class="or-color">新手指引</a>｜
+            	<a href="#" target="_blank" class="phone-down"><span></span>移动端下载</a>｜
+            	<a href="#" target="_blank">帮助中心</a>
+            </div>
+        </div>
+    </div>
+    <div class="ac-nav comWidth clearFiex">
+    	<div class="ac-logo fl"><img src="images/account/logo.png" alt="松鼠金融" /></div>
+        <ul class="ac-nav-list clearFiex fl">
+        	<li><a href="#" target="_blank">首页</a></li>
+        	<li class="">
+            	<a href="#" target="_blank">我要理财</a><em class="triangle_bottom_orange"></em>
+                <ol>
+                	<li><a href="#" target="_blank">快赚</a><span class="ac-i-s"><i class="ac-i-c">◇</i></span></li>
+                	<li><a href="#" target="_blank">大赚</a></li>
+                	<li><a href="#" target="_blank">特赚</a></li>
+                </ol>
+            </li>
+        	<li><a href="#" target="_blank">我要借款</a></li>
+        	<li><a href="#" target="_blank">安全保障</a></li>
+        	<li><a href="#" target="_blank">关于我们</a></li>                            
+        </ul>
+        <div class="user-area fr">
+        	<div class="user-ac">
+            	<span></span>
+                <div class="user-ac-list">
+                	我的账户
+                    <em class="triangle_bottom_orange"></em>
+                    <ul class="user-ac-u">
+                    	<li><a href="#" target="_blank">账户总览</a></li>
+                    	<li><a href="#" target="_blank">充值</a></li>
+                    	<li><a href="#" target="_blank">消息中心</a></li>
+                    	<li><a href="#" target="_blank">安全退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header e -->
+<!-- 账户中心导航 s -->
+<div class="user-nav-wrap">
+	<ul class="comWidth clearFiex">
+    	<li><a href="#">账户总览</a></li>
+    	<li class="active"><a href="#">充值提现</a></li>
+    	<li><a href="#">我要理财</a></li>
+    	<li><a href="#">我的借款</a></li>
+    	<li><a href="#">交易记录</a></li>
+    	<li><a href="#">奖励管理</a></li>
+    	<li><a href="#">邀请好友</a></li>
+    	<li><a href="#">安全中心</a></li>
+    	<li><a href="#">消息中心</a></li>
+    </ul> 
+</div>
+	<!-- 账户中心导航 e -->
+	<div class="body-wrap">
+		<div class="comWidth clearFiex">
+			<div class="credit-infos">
+	        	<h2 class="inve-com-tit"><span></span><font>我的信用额度</font><font class="or-color">&nbsp;￥5000.00</font></h2>
+	            <ul class="u-credit-list">
+	            	<li>
+                    	<div id="iScore"></div>
+	                	<!--<canvas class="canvas-s" id="meter" width="260" height="260"></canvas>-->
+	                    <div class="u-credit-rm"><span class="uc-rs">当前信用评分：1100</span></div>
+	                </li>
+	                <li>
+	                	<canvas class="canvas-y" id="myCanvas1" width="248" height="248">90%</canvas>
+	                    <div class="u-credit-rm">
+	                    	<span>总额：<font>5000元</font></span>
+	                    	<span><em></em>已用：<font>5000元</font></span>
+	                    	<span><em class="active"></em>可用：<font>5000元</font></span>
+	                    </div>
+	                </li>
+	                <li>
+	                	<canvas class="canvas-y" id="myCanvas2" width="248" height="248">78%</canvas>
+	                    <div class="u-credit-rm">
+	                    	<span>总额：<font>5000元</font></span>
+	                    	<span><em></em>已用：<font>5000元</font></span>
+	                    	<span><em class="active"></em>可用：<font>5000元</font></span>
+	                    </div>
+	                </li>
+	            </ul>
+	        </div>
+	    
+	    </div>
+	    <div class="comWidth clearFiex tm15">
+			<ul class="boin-tab2 clearFiex">
+	                <li class="active"><a href="###">我要还款</a></li>
+		            <li><a href="###">我的借款</a></li>
+		            <li class="BalanceNum">剩余还款总额：<em>3400.00元  </em></li>
+	        </ul>
+	        
+	        <div class="boin-con-box">
+	        	<!--我要还款-->
+	        	<div class="boin-con-item myloanPos">
+	        		<div class="myRepay clearFiex">
+	        			<div class="myRepay_con fl">
+	        				<dl class="clearFiex">
+	        					<dt class="myRepayPic myRepayPic0 fl"></dt>
+	        					<dd class="fl">
+	        						<h1 class="myRepay_con_Tit">立刻借现金</h1>
+	        						<ul class="clearFiex myRepay_con_list">
+	        							<li class="fl">
+	        								<p>借款金额：<b>100,000.00</b>元</p>
+	        								<p>借款期数：<b>10</b>天</p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>借款时间：<span>2016-01-05</span></p>
+	        								<p>还款日期：<span>2016-01-05</span></p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>还款金额：</p>
+	        								<p class="repayNum"><b>45,123,400.00</b>元  </p>
+	        							</li>
+	        						</ul>
+	        						
+	        					</dd>
+	        				</dl>
+	        			</div>
+	        			<div class="myRepay_btn fl">
+	        				<p>借款编号 <span>HX-SGD200064755</span></p>
+	        				<a href="javascript:;" class="myloanBtn">快速还款</a>
+	        			</div>
+	        		</div>
+	        		<div class="myRepay clearFiex">
+	        			<div class="myRepay_con fl">
+	        				<dl class="clearFiex">
+	        					<dt class="myRepayPic myRepayPic1 fl"></dt>
+	        					<dd class="fl">
+	        						<h1 class="myRepay_con_Tit">代还信用卡</h1>
+	        						<ul class="clearFiex myRepay_con_list">
+	        							<li class="fl">
+	        								<p>借款金额：<b>100,000.00</b>元</p>
+	        								<p>借款期数：<b>10</b>天</p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>借款时间：<span>2016-01-05</span></p>
+	        								<p>还款日期：<span>2016-01-05</span></p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>还款金额：</p>
+	        								<p class="repayNum"><b>45,123,400.00</b>元  </p>
+	        							</li>
+	        						</ul>
+	        						
+	        					</dd>
+	        				</dl>
+	        			</div>
+	        			<div class="myRepay_btn fl">
+	        				<p>借款编号 <span>HX-SGD200064755</span></p>
+	        				<a href="javascript:;" class="myloanBtn">快速还款</a>
+	        			</div>
+	        		</div>
+	        		<div class="myRepay clearFiex">
+	        			<div class="clearFiex">
+                        	<div class="myRepay_con fl">
+	        				<dl class="clearFiex">
+	        					<dt class="myRepayPic myRepayPic2 fl"></dt>
+	        					<dd class="fl">
+	        						<h1 class="myRepay_con_Tit">酷派F2(2232)DX</h1>
+	        						<ul class="clearFiex myRepay_con_list">
+	        							<li class="fl">
+	        								<p>借款金额：<b>100,000.00</b>元</p>
+	        								<p>借款期数：<b>3</b>期</p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>已还金额：<b>100,000.00</b>元</p>
+	        								<p>已还期数：<span>1/3期</span></p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>待还金额：</p>
+	        								<p class="repayNum"><b>45,123,400.00</b>元  </p>
+	        							</li>
+	        						</ul>
+	        						
+	        					</dd>
+	        				</dl>
+	        			</div>
+	        				<div class="myRepay_btn fl">
+	        				<p>借款编号 <span>HX-SGD200064755</span></p>
+	        				<a href="javascript:;" class="myloanBtn myloanBtn1">账单明细<em class="iconTop"></em></a>
+	        			</div>
+                        </div>
+	        			<!--账单明细 s-->
+	        			<div class="detail-list clearFiex">
+	        				<ul class="clearFiex detail-list-ul">
+	        					<li>
+	        						<div class="myRepay_con fl">
+				        				<dl class="clearFiex">
+				        					<dt class="myRepayPic cheBox fl">
+				        						<input type="checkbox" name="" id="" value="" /><span>1</span>
+				        					</dt>
+				        					<dd class="fl">
+				        						<ul class="clearFiex myRepay_con_list">
+				        							<li class="fl"><p class="linHe68">还款日期：<span>2016-01-05</span></p></li>
+				        							<li class="fl"><p class="linHe68">本期应还：<b>45,123,400.00</b>元</p></li>
+				        							<li class="fl"><p class="linHe68">还款状态：<span class="or-color">未还</span></p></li>
+				        						</ul>
+				        					</dd>
+				        				</dl>
+				        			</div>
+				        			<div class="myRepay_btn fl">
+				        				<a href="javascript:;" class="myloanBtn">快速还款</a>
+				        			</div>
+	        					</li>
+	        					<li>
+	        						<div class="myRepay_con fl">
+				        				<dl class="clearFiex">
+				        					<dt class="myRepayPic cheBox fl">
+				        						<input type="checkbox" name="" id="" value="" /><span>2</span>
+				        					</dt>
+				        					<dd class="fl">
+				        						<ul class="clearFiex myRepay_con_list">
+				        							<li class="fl"><p class="linHe68">还款日期：<span>2016-01-05</span></p></li>
+				        							<li class="fl"><p class="linHe68">本期应还：<b>45,123,400.00</b>元</p></li>
+				        							<li class="fl"><p class="linHe68">还款状态：<span class="or-color">未还</span></p></li>
+				        						</ul>
+				        					</dd>
+				        				</dl>
+				        			</div>
+				        			<div class="myRepay_btn fl">
+				        				<a href="javascript:;" class="myloanBtn grayBtn">快速还款</a>
+				        			</div>
+	        					</li>
+	        					<li>
+	        						<div class="myRepay_con fl">
+				        				<dl class="clearFiex">
+				        					<dt class="myRepayPic cheBox fl">
+				        						<input type="checkbox" name="" id="" value="" /><span>3</span>
+				        					</dt>
+				        					<dd class="fl">
+				        						<ul class="clearFiex myRepay_con_list">
+				        							<li class="fl"><p class="linHe68">还款日期：<span>2016-01-05</span></p></li>
+				        							<li class="fl"><p class="linHe68">本期应还：<b>45,123,400.00</b>元</p></li>
+				        							<li class="fl"><p class="linHe68">还款状态：<span class="blue-color">已还</span></p></li>
+				        						</ul>
+				        					</dd>
+				        				</dl>
+				        			</div>
+	        					</li>
+	        				</ul>
+	        				
+	        			</div>
+	        			<!--账单明细 e-->
+	        		</div>
+	        	</div>
+	        	<!--我的借款-->
+	        	<div class="boin-con-item myloanPos" style="display: none;">
+	        		<div class="myRepay clearFiex">
+	        			<div class="myRepay_con fl">
+	        				<dl class="clearFiex">
+	        					<dt class="myRepayPic myRepayPic0 fl"></dt>
+	        					<dd class="fl">
+	        						<h1 class="myRepay_con_Tit">立刻借现金</h1>
+	        						<ul class="clearFiex myRepay_con_list">
+	        							<li class="fl">
+	        								<p>借款金额：<b>100,000.00</b>元</p>
+	        								<p>借款期数：<b>10</b>天</p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>借款时间：<span>2016-01-05</span></p>
+	        								<p>还款日期：<span>2016-01-05</span></p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>&nbsp;&nbsp;&nbsp;居间费用：<span>50.22元</span></p>
+	        								<p>第三方费用：<span>50.22元</span></p>
+	        							</li>
+	        						</ul>
+	        						
+	        					</dd>
+	        				</dl>
+	        			</div>
+	        			<div class="myRepay_btn fl">
+	        				<p>借款编号 <span>HX-SGD200064755</span></p>
+	        				<p class="Actarr">实际到账：<span class="priColr">250.22元</span></p>
+	        				<a href="javascript:;" class="myloanBtn myloanBtn1 myloanBtn2"><em class="icon-ht"></em>下载合同</a>
+	        			</div>
+	        		</div>
+	        		<div class="myRepay clearFiex">
+	        			<div class="myRepay_con fl">
+	        				<dl class="clearFiex">
+	        					<dt class="myRepayPic myRepayPic1 fl"></dt>
+	        					<dd class="fl">
+	        						<h1 class="myRepay_con_Tit">代还信用卡</h1>
+	        						<ul class="clearFiex myRepay_con_list">
+	        							<li class="fl">
+	        								<p>借款金额：<b>100,000.00</b>元</p>
+	        								<p>借款期数：<b>10</b>天</p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>借款时间：<span>2016-01-05</span></p>
+	        								<p>还款日期：<span>2016-01-05</span></p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>&nbsp;&nbsp;&nbsp;居间费用：<span>50.22元</span></p>
+	        								<p>第三方费用：<span>50.22元</span></p>
+	        							</li>
+	        						</ul>
+	        						
+	        					</dd>
+	        				</dl>
+	        			</div>
+	        			<div class="myRepay_btn fl">
+	        				<p>借款编号 <span>HX-SGD200064755</span></p>
+	        				<p class="Actarr">实际到账：<span class="priColr">250.22元</span></p>
+	        				<a href="javascript:;" class="myloanBtn myloanBtn1 myloanBtn2"><em class="icon-ht"></em>下载合同</a>
+	        			</div>
+	        		</div>
+	        		<div class="myRepay clearFiex">
+	        			<div class="myRepay_con fl">
+	        				<dl class="clearFiex">
+	        					<dt class="myRepayPic myRepayPic2 fl"></dt>
+	        					<dd class="fl">
+	        						<h1 class="myRepay_con_Tit">酷派F2(2232)DX</h1>
+	        						<ul class="clearFiex myRepay_con_list">
+	        							<li class="fl">
+	        								<p>借款金额：<b>100,000.00</b>元</p>
+	        								<p>借款期数：<b>3</b>期</p>
+	        							</li>
+	        							<li class="fl">
+	        								<p>&nbsp;</p>
+	        								<p>借款时间：<span>2016-01-05</span></p>
+	        							</li>
+	        						</ul>
+	        						
+	        					</dd>
+	        				</dl>
+	        			</div>
+	        			<div class="myRepay_btn fl">
+	        				<p>借款编号 <span>HX-SGD200064755</span></p>
+	        				<p class="Actarr">&nbsp;</p>
+	        				<a href="javascript:;" class="myloanBtn myloanBtn1 myloanBtn2"><em class="icon-ht"></em>下载合同</a>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+		</div>
+		<div class="hr60"></div>
+	</div>
+    
+    <div id="footer">
+		<div class="footer-links">
+	    	<div class="comWidth clearFiex">
+	        	<div class="footer-dl-box fl">
+	                <dl>
+	                    <dt><a href="#" target="_blank">关于我们</a></dt>
+	                    <dd><a href="#" target="_blank">公司介绍</a></dd>
+	                    <dd><a href="#" target="_blank">平台公告</a></dd>
+	                    <dd><a href="#" target="_blank">加入我们</a></dd>
+	                    <dd><a href="#" target="_blank">联系我们</a></dd>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#" target="_blank">安全保障</a></dt>
+	                    <dd><a href="#" target="_blank">债权保障</a></dd>
+	                    <dd><a href="#" target="_blank">平台保障</a></dd>
+	                    <dd><a href="#" target="_blank">技术保障</a></dd>
+	                    <dd><a href="#" target="_blank">法律保障</a></dd>
+	                </dl>
+	                <dl>
+	                    <dt><a href="#" target="_blank">帮助中心</a></dt>
+	                    <dd><a href="#" target="_blank">新手指引</a></dd>
+	                    <dd><a href="#" target="_blank">常见问题</a></dd>
+	                    <dd><a href="#" target="_blank">名词解释</a></dd>
+	                </dl>
+	            </div>
+	            <div class="contact-information fl">
+	            	<div class="c-i-item ci-lc">
+	                	<p class="c-i-title">理财服务热线：</p>
+	                    <p class="c-i-info">400-010-5577</p>
+	                </div>
+	                <div class="c-i-item">
+	                	<p class="c-i-title">理财服务热线：</p>
+	                    <p class="c-i-info">400-010-5577</p>
+	                </div>
+	            </div>
+	            <ul class="f-qr-list">
+	            	<li>
+	                	<img src="images/QRS/licaifuwuhao.jpg" alt="" />
+	                    <p>理财－微信服务号</p>
+	                </li>
+	            	<li>
+	                	<img src="images/QRS/licaiApp.jpg" alt="" />
+	                    <p>理财－客户端下载</p>
+	                </li>
+	            	<li>
+	                	<img src="images/QRS/jiekuanApp.jpg" alt="" />
+	                    <p>借款－微信服务号</p>
+	                </li>
+	            	<li>
+	                	<img src="images/QRS/jiekuanfuwu.jpg" alt="" />
+	                    <p>借款－微信服务号</p>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	    <div class="footer-bottom-info">
+	    	<p class="comWidth">北京恒善信诚科技有限公司&nbsp;&nbsp;&nbsp;©2015 songshubank.com&nbsp;All Rights Reserved&nbsp;&nbsp;&nbsp;京ICP备15037970号&nbsp;&nbsp;&nbsp;京公网安备11010802018006</p>
+	        <div class="footer-verification-v">
+	        	<a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+	        </div>
+	    </div>
+	</div>
+</div>
+</body>
+<script src="js/sea.js"></script>
+<script>
+seajs.config({
+    alias: {
+      'jquery': './js/jquery-1.11.1.min',
+	  'acCommon': './js/acCommon',
+	  'progress': './js/circle-progress',
+	  'endcircle': './js/endcircle'
+    }
+});
+seajs.use(["jquery","acCommon","progress","endcircle"],function(a,b){
+	
+	//我要理财
+	b.tNavList();
+	//我的账户
+	b.userArea();
+	//状态选择
+	b.fnTab($(".boin-tab2"),$(".boin-con-box"),"click");
+	b.statSelet();
+	b.showHide();
+	
+	b.getCav("myCanvas1",3872.98,5000,"可用代还信用卡额度");
+	b.getCav("myCanvas2",4759.56,5000,"可用现金及消费额度");
+	
+	
+	var now = 1300;
+		var v = now/1300;
+		if(now == 1300){
+			v = v - 0.04
+		}
+		$('#iScore').circleProgress({
+	        lineCap:'round',
+	        thickness:3,//线的
+	        value: v,
+	        size: 180,
+	        fill: {
+	            color: "#f1831e"
+	        },
+	        emptyFill:"#d8d8d8",
+	        dotRadius: 4,
+	        startAngle: -Math.PI / 2
+	    });
+	
+	
+})
+
+
+
+</script>
+</html>

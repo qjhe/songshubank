@@ -1,0 +1,657 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>活期快赚</title>
+<link href="../css/home.css" rel="stylesheet">
+</head>
+<style>
+html { overflow-x:hidden; }
+</style>
+<body>
+<!-- header s -->
+<div id="header">
+	<div class="ac-top-info-wrap">
+    	<div class="ac-top-info clearFiex comWidth">
+            <div class="fl ac-text clearFiex">
+                <p class="tel fl">理财服务热线： 400-010-5577 |  借款服务热线 ：400-010-6585</p> 
+                <div class="focus fl">
+                	关注我们：
+                    <span class="weixin"></span>
+                    <span class="weibo"></span>
+                </div>
+            </div>
+            <div class="fr ac-links">
+            	<a href="#" target="_blank" class="or-color">新手指引</a>｜
+            	<a href="#" target="_blank" class="phone-down"><span></span>移动端下载</a>｜
+            	<a href="#" target="_blank">帮助中心</a>
+            </div>
+        </div>
+    </div>
+    <div class="ac-nav comWidth clearFiex">
+    	<div class="ac-logo fl"><img src="../images/account/logo.png" alt="松鼠金融" /></div>
+        <ul class="ac-nav-list clearFiex fl">
+        	<li><a href="#" target="_blank">首页</a></li>
+        	<li class="">
+            	<a href="#" target="_blank">我要理财</a><em class="triangle_bottom_orange"></em>
+                <ol>
+                	<li><a href="#" target="_blank">快赚</a><span class="ac-i-s"><i class="ac-i-c">◇</i></span></li>
+                	<li><a href="#" target="_blank">大赚</a></li>
+                	<li><a href="#" target="_blank">特赚</a></li>
+                </ol>
+            </li>
+        	<li><a href="#" target="_blank">我要借款</a></li>
+        	<li><a href="#" target="_blank">安全保障</a></li>
+        	<li><a href="#" target="_blank">关于我们</a></li>                            
+        </ul>
+        <div class="user-area fr">
+        	<div class="user-login-reg">
+            	<a class="u-i-login" href="#">登录</a>&nbsp;&nbsp;
+                <a class="u-i-reg" href="#">注册</a>
+            </div>
+        	<div class="user-ac" style="display:none;">
+                <div class="user-ac-list">
+                	<span></span>
+                	我的账户
+                    <em class="triangle_bottom_orange"></em>
+                    <ul class="user-ac-u">
+                    	<li><a href="#" target="_blank">账户总览</a></li>
+                    	<li><a href="#" target="_blank">充值</a></li>
+                    	<li><a href="#" target="_blank">消息中心</a></li>
+                    	<li><a href="#" target="_blank">安全退出</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- header e -->
+
+<div class="body-wrap-current">
+    
+    <div class="user-banner">
+    	<div class="comWidth clearFiex">
+        	<img class="cloud-o" src="../images/account/animation/cloud1.png" />
+            <img class="cloud-t" src="../images/account/animation/cloud2.png" />
+            <img class="fire-b" src="../images/account/animation/fireBalloo.png" />
+            
+        	<div class="product-description fl">
+            	<h2>松鼠活期<em></em></h2>
+                <p class="pro-des-txt">
+                	松鼠金融活期为优质债权活期理财产品； 可随时转入和随时转出提现，每日结息；主要投资于具有较高保障系数的消费信贷、供应链金融、抵押类资产等数千种债权标的，基于线上+线下风控体系精选优质项目，利用大数据模型智能分散投资，形成高流动性高收益和极致分散的安全理财服务。
+                </p>
+            </div>
+            
+            <div class="user-operation-area fr">
+            
+            	<p class="account-oper-v">
+                	<strong class="fl"><span>账户余额(元)：</span><a class="blue-color" href="#">登录</a>&nbsp;&nbsp;可见</strong>
+                    <a class="account-recharge-a fr" href="#">充值</a>
+                </p>
+                
+                <p class="account-share-v">
+                	<strong><em data-num_color="5" ><i>5%&nbsp;&nbsp;</i></em></strong>
+                </p>
+                
+                <div class="account-share-wrap">
+                	<div class="ac-tody-share fl">
+                    	<em class="sline"></em>
+                    	<p class="ac-tody-share or-color" id="proShare" data-share="1555896">￥1,555,896.00</p>
+                        <p class="ac-tody-msg">今日份额</p>
+                    </div>
+                    <div class="ac-surplus-share fr">
+                    	<p class="ac-tody-share or-color">￥12,286,896.00</p>
+                        <p class="ac-tody-msg">剩余份额</p>
+                    </div>
+                </div>
+                <!-- 未开授权显示 S -->
+                <div class="ac-tip-v">
+                	<h3><em></em>温馨提示</h3>
+                    <p>为保证您的活期理财资金充分利用，请<a href="#" class="or-color">开通易宝自动投标授权</a></p>
+                </div>
+                <!-- 未开授权显示 E -->
+                <div class="ac-investment-wrap">
+                	<p><span>投资金额：</span><input id="invIpt" type="text" value="" placeholder="起投金额100元" /><a id="goBuy" class="fr" href="#">立即开通</a></p>
+                    <p class="ai-error-msg">投资金额须为100的整数倍</p>
+                    <p class="ac-nh-sy"><span>年化收益：</span><font class="or-color" id="expProfit">￥<i>0.00</i></font></p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="comWidth">
+    	<div class="current-feature ">
+    		<ul>
+            	<li>
+                	<div class="current-feature-itme">
+                    	<em class="cu-fei-iconh"></em>
+                        <p class="cu-fe-tit">随时支取</p>
+                        <p class="cu-fe-tip">随时可以把钱赎回提现</p>
+                    </div>
+                </li>
+            	<li>
+                	<div class="current-feature-itme">
+                    	<em class="cu-fei-iconi"></em>
+                        <p class="cu-fe-tit">随时支取</p>
+                        <p class="cu-fe-tip">随时可以把钱赎回提现</p>
+                    </div>
+                </li>
+            	<li>
+                	<div class="current-feature-itme">
+                    	<em class="cu-fei-icong"></em>
+                        <p class="cu-fe-tit">随时支取</p>
+                        <p class="cu-fe-tip">随时可以把钱赎回提现</p>
+                    </div>
+                </li>
+            	<li>
+                	<div class="current-feature-itme">
+                    	<em class="cu-fei-iconk"></em>
+                        <p class="cu-fe-tit">随时支取</p>
+                        <p class="cu-fe-tip">随时可以把钱赎回提现</p>
+                    </div>
+                </li>
+            </ul>
+    	</div>
+    </div>
+    
+    <div class="comWidth">
+    	<div class="current-info-tabs">
+        
+        	<div class="c-i-tabs">
+                <div class="b-line"></div>
+                <ul class="boin-tab border-bottom">
+                    <li class="active"><a href="javascript:;">产品说明</a></li>
+                    <li><a href="javascript:;">资产组成</a></li>
+                    <li><a href="javascript:;">投资记录</a></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                </ul>
+            </div>
+            <div class="boin-con-box">
+            	<!-- 产品说明 S -->
+                <div class="boin-con-item" style="display:none;">
+                    <ul class="pro-info-m">
+                    	<li>
+                        	<span>投资期限：</span><em>活期（随时可退出）</em>
+                        </li>
+                    	<li>
+                        	<span>预期日息：</span><em>万分之二</em>
+                        </li>
+                    	<li>
+                        	<span>收益方式：</span><em>每日结息</em>
+                        </li>
+                    	<li>
+                        	<span>投资门槛：</span><em>100元起投（100元的整数倍）</em>
+                        </li>
+                    	<li>
+                        	<span>保障方式：</span><em>第三方本息保障<a href="#" class="blue-color">（本息担保函）</a></em>
+                        </li>
+                    	<li>
+                        	<span>资产组成：</span><em>松鼠金融资产实时透明，详情见<a href="#" class="blue-color">资产组成>></a>，由供应链金融，应收账款转让，小额现金借款等组成；</em>
+                        </li>
+                    	<li>
+                        	<span>退出方式：</span><em>债权转让</em>
+                        </li>
+                    	<li>
+                        	<span>提现流程：</span><em>先转出活期资金到账户余额（实时到账），再对账户余额进行提现（T+1，遇到节假日顺延）。</em>
+                        </li>
+                    	<li>
+                        	<span>费　　用：</span><em>充值免费；提现：第三方收取手续费2元/笔。</em>
+                        </li>
+                    	<li>
+                        	<span>投资协议：</span><em>请参考<a href="#" class="blue-color">快赚活期投资协议>></a></em>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 产品说明 E -->
+                
+                <!-- 资产组成 S -->
+                <div class="boin-con-item" style="display:block">
+                    
+                    <ul class="assets-mix-tit">
+                    	<li class="active"><a href="javascript:void(0);">个人信用借款项目</a></li>
+                    	<li><a href="javascript:void(0);">中小企业借款项目</a></li>
+                    	<li><a href="javascript:void(0);">供应链融资项目</a></li>
+                    </ul>
+                    <p class="ck-jq-list"><a class="blue-color" target="_blank" href="/product/freeDebtList?id=${(freeInfo.contractId)!""}">查看债权组成</a></p>
+                    <div class="assets-pic-box">
+                    	
+                        <!-- 个人现金贷 -->
+                        <div class="assets-cash" style="display:block;">
+                        	<h3>个人信用借款项目</h3>
+                        	<p>个人借款项目为单笔借款金额在1000元-50000元的小额信用贷，平台对借款人的个人基本信息、信用报告、社保公积金、家庭情况、收入水平等材料，均进行完备的审核，并经风控部门多重审核后，计算松鼠信用分，量化评估该借款人的还款能力，确保借款人具备较强还款能力，并且由担保公司提供本息保障。</p>
+                            <img src="../images/commons/assets/assA.png" />
+                            <img src="../images/commons/assets/assB.jpg" />
+                        </div>
+                        <!-- 中小企业债权转让 -->
+                        <div class="assets-cash" style="display:none;">
+                        	<h3>中小企业借款项目</h3>
+                        	<p>融资方均为实力雄厚的中小企业，平台对债权方的企业基本信息、经营状况、还款意愿以及还款能力均进行完备的尽职调查，并经风控部门多重审核后，出具风控报告，并且由保理公司提供本息保障。</p>
+                            <img src="../images/commons/assets/assC.jpg" />
+                        </div>
+                        <!-- 供应链项目 -->
+                        <div class="assets-cash" style="display:none;">
+                        	<h3>供应链融资项目</h3>
+                        	<p>个人借款项目为单笔借款金额在1000元-50000元的小额信用贷，平台对借款人的个人基本信息、信用报告、社保公积金、家庭情况、收入水平等材料，均进行完备的审核，并经风控部门多重审核后，计算松鼠信用分，量化评估该借款人的还款能力，确保借款人具备较强还款能力，并且由担保公司提供本息保障。</p>
+                            <img src="../images/commons/assets/assA.png" />
+                            <img src="../images/commons/assets/assB.jpg" />
+                        </div>
+                        <!-- 中小企业债权转让 -->
+                        <div class="assets-cash" style="display:none;">
+                        	<h3>供应链融资项目</h3>
+                        	<p>供应链金融以真实的贸易往来为基础，向产业供应链各方提供融资服务，为其提供便捷的融资渠道，平台对零售、供应、仓储、运输、资金方、保理方各方均进行完备的尽职调查，并经风控部门多重审核后，出具风控报告，并且由保理公司提供本息保障。</p>
+                            <img src="../images/commons/assets/assD.jpg" />
+                            <img src="../images/commons/assets/assE.jpg" />
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- 资产组成 E -->
+                
+                <!-- 投资记录 S -->
+                <div class="boin-con-item" style="display:none">
+                    <table class="investment-record-tab">
+                    	<tr class="i-r-title"><td>序号</td><td>用户名</td><td>出借金额(元)</td><td>加入时间</td></tr>
+                        <tr><td>1</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                        <tr><td>2</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                        <tr><td>3</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                        <tr><td>4</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                        <tr><td>5</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                        <tr><td>6</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                        <tr><td>7</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                        <tr><td>8</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                        <tr><td>9</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                        <tr><td>10</td><td>138****3265</td><td><span class="or-color">5,000.00</span></td><td>2015-09-28</td></tr>
+                    </table>
+                </div>
+                <!-- 投资记录 E -->
+                
+                <!-- 常见问题 S -->
+                <div class="boin-con-item" style="display:none">
+                
+                    <div class="common-problem-w">
+                    	<p class="line3px"></p>
+                    	<ul class="common-problem-ul">
+                            <li class="cp-profit active">
+                                <div class="common-problem-item">
+                                	<a href="javascript:void(0);"></a>
+                                    <p><strong><i></i></strong></p>
+                                    <p><span class="or-color">收益</span></p>
+                                </div>
+                            </li>
+                            <li class="cp-safe">
+                                <div class="common-problem-item">
+                                	<a href="javascript:void(0);"></a>
+                                    <p><strong><i></i></strong></p>
+                                    <p><span class="or-color">安全</span></p>
+                                </div>
+                            </li>
+                            <li class="cp-investment">
+                                <div class="common-problem-item">
+                                	<a href="javascript:void(0);"></a>
+                                    <p><strong><i></i></strong></p>
+                                    <p><span class="or-color">投资</span></p>
+                                </div>
+                            </li>
+                            <li class="cp-rollout">
+                                <div class="common-problem-item">
+                                	<a href="javascript:void(0);"></a>
+                                    <p><strong><i></i></strong></p>
+                                    <p><span class="or-color">转出</span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ac-tips-content">
+                    	<!-- 收益 S -->
+                        <div class="ac-tips-itemv">
+                        	<dl class="ac-tips-list">
+                                <dt class="fl"><span>1</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？收益收益收益</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>2</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>3</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>4</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>5</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- 收益 E -->
+                        <!-- 安全 S -->
+                        <div class="ac-tips-itemv" style="display:none;">
+                        	<dl class="ac-tips-list">
+                                <dt class="fl"><span>1</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？安全安全安全</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>2</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>3</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>4</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>5</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- 安全 E -->
+                        <!-- 投资 S -->
+                        <div class="ac-tips-itemv" style="display:none;">
+                        	<dl class="ac-tips-list">
+                                <dt class="fl"><span>1</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？投资投资投资</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>2</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>3</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>4</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>5</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- 投资 E -->
+                        <!-- 转出 S -->
+                        <div class="ac-tips-itemv" style="display:none;">
+                        	<dl class="ac-tips-list">
+                                <dt class="fl"><span>1</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？转出转出转出</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>2</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>3</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>4</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                            <dl class="ac-tips-list">
+                                <dt class="fl"><span>5</span></dt>
+                                <dd class="fl">
+                                    <h4>不开通资金托管账户可以进行操作么？</h4>
+                                    <p>非常抱歉，为了用户的安全问题考虑，用户必须开通资金托管账户之后才可以进行［转入］、［转出］操作。</p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <!-- 转出 E -->
+                        
+                    </div>
+                    
+                </div>
+                <!-- 常见问题 E -->
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="hr60"></div>
+</div>
+
+<div id="footer">
+    <div class="footer-links">
+        <div class="comWidth clearFiex">
+            <div class="footer-dl-box fl">
+                <dl>
+                    <dt><a href="#" target="_blank">关于我们</a></dt>
+                    <dd><a href="#" target="_blank">公司介绍</a></dd>
+                    <dd><a href="#" target="_blank">平台公告</a></dd>
+                    <dd><a href="#" target="_blank">加入我们</a></dd>
+                    <dd><a href="#" target="_blank">联系我们</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#" target="_blank">安全保障</a></dt>
+                    <dd><a href="#" target="_blank">债权保障</a></dd>
+                    <dd><a href="#" target="_blank">平台保障</a></dd>
+                    <dd><a href="#" target="_blank">技术保障</a></dd>
+                    <dd><a href="#" target="_blank">法律保障</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#" target="_blank">帮助中心</a></dt>
+                    <dd><a href="#" target="_blank">新手指引</a></dd>
+                    <dd><a href="#" target="_blank">常见问题</a></dd>
+                    <dd><a href="#" target="_blank">名词解释</a></dd>
+                </dl>
+            </div>
+            <div class="contact-information fl">
+                <div class="c-i-item ci-lc">
+                    <p class="c-i-title">理财服务热线：</p>
+                    <p class="c-i-info">400-010-5577</p>
+                </div>
+                <div class="c-i-item">
+                    <p class="c-i-title">理财服务热线：</p>
+                    <p class="c-i-info">400-010-5577</p>
+                </div>
+            </div>
+            <ul class="f-qr-list">
+                <li>
+                    <img src="../images/QRS/licaifuwuhao.jpg" alt="" />
+                    <p>理财－微信服务号</p>
+                </li>
+                <li>
+                    <img src="../images/QRS/licaiApp.jpg" alt="" />
+                    <p>理财－客户端下载</p>
+                </li>
+                <li>
+                    <img src="../images/QRS/jiekuanApp.jpg" alt="" />
+                    <p>借款－微信服务号</p>
+                </li>
+                <li>
+                    <img src="../images/QRS/jiekuanfuwu.jpg" alt="" />
+                    <p>借款－微信服务号</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom-info">
+        <p class="comWidth">北京恒善信诚科技有限公司&nbsp;&nbsp;&nbsp;©2015 songshubank.com&nbsp;All Rights Reserved&nbsp;&nbsp;&nbsp;京ICP备15037970号&nbsp;&nbsp;&nbsp;京公网安备11010802018006</p>
+        <div class="footer-verification-v">
+            <a href="#" target="_blank" rel="external nofollow"><img src="../images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="../images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="../images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="../images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="../images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="../images/content/360.png" alt="" /></a>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="../js/sea.js"></script>
+<script>
+seajs.config({
+    alias: {
+      'jquery': '../js/jquery-1.11.1.min',
+	  'acCommon': '../js/acCommon.js',
+      'pop': '../js/BombBox'
+    }
+});
+seajs.use(["jquery","acCommon","pop"],function(a,b,c){
+	
+	//我要理财
+	b.tNavList();
+	//我的账户
+	b.userArea();
+	//状态选择
+	b.fnTab($(".boin-tab"),$(".boin-con-box"),"click",function(){
+		t1.init();	
+	});
+	//资产组成 切换
+	b.fnTab($(".assets-mix-tit"),$(".assets-pic-box"),"click");
+	b.statSelet(function(){});
+	b.interColor("acco-table","#f9fbfa","#fff")
+	
+	var t1= new tabs( $(".c-i-tabs ul") , $('.b-line') , 0 );
+	t1.init();
+	//常见问题切换
+	b.fnTab($(".common-problem-ul"),$(".ac-tips-content"),"click");
+	
+	if( parseInt($(".account-share-v em").data("num_color")) <10){
+		$(".account-share-v em i").addClass("share-less");	
+	}
+	//已购买份额 进度 动画account-share-v
+	b.pwdSafe($(".account-share-v em"));
+	//选项卡 固定 顶部 效果
+	var tabsScroll = new function(){
+		this.obj = $('.c-i-tabs');
+		this.detailsTop = 0;
+		this.init = function(){
+			var _This = this;
+			_This.detailsTop = _This.obj.offset().top;
+			$(window).scroll(function(){
+				if($(window).scrollTop() > _This.detailsTop){
+					if(document.body.clientWidth<=1200){
+						_This.obj.removeClass('tab-top-scroll').addClass('tab-top-scrollT');
+					}else{
+						_This.obj.removeClass('tab-top-scrollT').addClass('tab-top-scroll');	
+					}
+				}else{
+					_This.obj.removeClass('tab-top-scroll').removeClass('tab-top-scrollT');
+				}
+			})	
+		};
+	}
+	
+	tabsScroll.init();
+	
+	//$(".ai-error-msg").slideDown()
+	$("#invIpt").on("input propertychange keyup paste blur",function(){
+		//投资金额大于100&&为100的整数倍
+		var money = $(this).val();
+		validateInv(money,this);
+	})
+	
+	//money 当前输入的金额
+	function validateInv(money,obj){
+		if(/^0+/.test(money)){
+			money = money.replace(/^0+/, '');
+			$(obj).val(money);
+		}
+		if( !/^(\d+)$/.test(money) ){
+			money = money.replace(/[^0-9]/g, '');
+			$(obj).val(money);
+		} 
+		var Amcon = parseInt( $("#proShare").data("share") );//当前产品最大可够份额
+		var inSh = parseInt(10000000);//${maxShare!"0"};//用户最大可购份额
+		
+		if( money>Amcon ){//大于剩余份额 判断
+			money = Amcon;
+			$(obj).val(money);
+		}
+		
+		if(money+""==""){
+			$(".ai-error-msg").html("金额不能为空").slideDown();
+			return false;
+		}else if( inSh<Amcon ){
+		
+			if( inSh<money&&inSh!=-1 ){
+				$(".ai-error-msg").html("您今日剩余可购买"+inSh+"元").slideDown();
+				return false;
+			}
+			
+		}else if( money<100 || money%100!=0 ){
+			$(".ai-error-msg").html("起投金额100元并且须为100的整数倍").slideDown();
+			return false;	
+		}else{
+			$(".ai-error-msg").slideUp();
+			//计算收益
+			var profit = b.profitPri(parseInt(money),7.3,1,"天");//预期收益
+			$("#expProfit i").html(profit)
+			
+			return true;
+		}
+	}
+		
+	
+})
+
+
+
+</script>
+</html>

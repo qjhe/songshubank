@@ -1,0 +1,413 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>充值</title>
+<link href="css/home.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- header s -->
+<div id="header">
+	<div class="ac-top-info-wrap">
+    	<div class="ac-top-info clearFiex comWidth">
+            <div class="fl ac-text clearFiex">
+                <p class="tel fl">理财服务热线： 400-010-5577 |  借款服务热线 ：400-010-6585</p> 
+                <div class="focus fl">
+                	关注我们：
+                    <a href="javascript:;" class="weixin"></a>
+                    <a href="javascript:;" class="weibo"></a>
+                </div>
+            </div>
+            <div class="fr ac-links">
+            	<a href="#" target="_blank" class="or-color">新手指引</a>｜
+            	<a href="#" target="_blank" class="phone-down"><span></span>移动端下载</a>｜<a href="#" target="_blank">帮助中心</a>
+            </div>
+        </div>
+    </div>
+    <div class="ac-nav comWidth clearFiex">
+    	<div class="ac-logo fl"><img src="images/commons/logo.png" alt="松鼠金融" /></div>
+        <ul class="ac-nav-list clearFiex fl">
+        	<li><a href="#" target="_blank">首页</a></li>
+        	<li class="">
+            	<a href="#" target="_blank">我要理财</a><em class="triangle_bottom_orange"></em>
+                <ol>
+                	<li><a href="#" target="_blank">快赚</a><span class="ac-i-s"><i class="ac-i-c">◇</i></span></li>
+                	<li><a href="#" target="_blank">大赚</a></li>
+                	<li><a href="#" target="_blank">特赚</a></li>
+                </ol>
+            </li>
+        	<li><a href="#" target="_blank">我要借款</a></li>
+        	<li><a href="#" target="_blank">安全保障</a></li>
+        	<li><a href="#" target="_blank">关于我们</a></li>                            
+        </ul>
+        <div class="user-area fr">
+        	<div class="user-ac">
+                <div class="user-ac-list">
+            	<span></span>
+                	我的账户
+                    <em class="triangle_bottom_orange"></em>
+                    <ul class="user-ac-u">
+                    	<li><a href="#" target="_blank">账户总览</a></li>
+                    	<li><a href="#" target="_blank">&nbsp;&nbsp;&nbsp;充值</a></li>
+                    	<li><a href="#" target="_blank">消息中心</a></li>
+                    	<li><a href="#" target="_blank">安全退出</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- header e -->
+<!-- 账户中心导航 s -->
+<div class="user-nav-wrap">
+	<div class="c-t-tabs">
+    	<div class="i-or-block"></div>
+        <ul class="comWidth clearFiex">
+            <li><a href="#">账户总览</a></li>
+            <li class="active"><a href="#">充值提现</a></li>
+            <li><a href="#">我的理财</a></li>
+            <li><a href="#">我的借款</a></li>
+            <li><a href="#">交易记录</a></li>
+            <li><a href="#">奖励管理</a></li>
+            <li><a href="#">邀请好友</a></li>
+            <li><a href="#">安全中心</a></li>
+            <li><a href="#">消息中心</a></li>
+        </ul> 
+    </div>
+</div>
+<!-- 账户中心导航 e -->
+<div class="body-wrap">
+    
+    <div class="comWidth">
+    	<div class="c-i-tabs">
+        	<div class="b-line"></div>
+            <ul class="boin-tab border-bottom">
+                <li class="active"><a href="javascript:;">充值</a></li>
+                <li><a href="javascript:;">提现</a></li>
+            </ul>
+        </div>
+        <div class="u-oper-box">
+            <!-- 充值 s -->
+            <div class="r-renchange-wrap boin-con-box">
+                
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="fl"><span class="ur-i-t">可用余额：</span></dt>
+                    <dd class="fl" data-count="0.00"><span class="ur-i-m">￥0.00</span></dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="fl"><span class="ur-i-t">充值金额：</span></dt>
+                    <dd class="fl" data-count="0.00">
+                        <input id="reMoney" class="ur-ipt-m" type="text" value="" >
+                        &nbsp;&nbsp;充值金额必须是大于1的整数
+                    </dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="fl"><span class="ur-i-t">选择充值银行：</span></dt>
+                    <dd class="fl">
+                        <ul class="ur-bank-list">
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/ICBC.png" alt="中国工商银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/CCB.png" alt="中国建设银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/ABC.png" alt="中国农业银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/CMBCHINA.png" alt="招商银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/BOC.png" alt="中国银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/CEB.png" alt="中国光大银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/GDB.png" alt="广发银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/PSBC.png" alt="中国邮政储蓄银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/CMBC.png" alt="中国民生银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/BCCB.png" alt="北京银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/BOCO.png" alt="交通银行"/></a></li>
+                            <li><a href="javascript:void(0);"><img src="images/bankCodes/ECITIC.png" alt="中信银行"/></a></li>
+                        </ul>
+                    </dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="fl">&nbsp;</dt>
+                    <dd class="fl"><input id="urBtnRec" class="ur-btn-rec" type="submit" value="充值" /> <span class="b-disabled">充值</span></dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex ur-bank-mark">
+                    <dt class="fl">&nbsp;</dt>
+                    <dd class="fl">
+                        <img src="images/bankCodes/mark/bMark.jpg" alt="">
+                        <div class="bank-wrap">
+                        	<div class="bank-i-w">
+                            	<div class="bank-info-a fl">
+                                    <div class="bank-area">
+                                        <p class="bank-tit">覆盖区域</p>
+                                        <div class="bank-content">
+                                            <span>全国</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bank-info-a fl">
+                                    <div class="bank-area">
+                                        <p class="bank-tit">支持卡种</p>
+                                        <div class="bank-content">
+                                            <span>借记卡</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bank-info-a fl">
+                                	<div class="bank-area bank-area-item">
+                                        <p class="bank-tit">用户类型</p>
+                                        <ul class="bank-content">
+                                            <li>静态密码</li>
+                                            <li>电子口令</li>
+                                            <li>手机认证</li>
+                                            <li>USBKey</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="bank-info-a fl">
+                                    <div class="bank-area bank-area-met">
+                                        <p class="bank-tit">网上银行开通方法</p>
+                                        <div class="bank-content">
+                                            <span>借记卡</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        	<p class="f-remark">备注：每张口令卡使用次数为1000次</p>
+                        </div>
+                    </dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex ur-bank-txtmark">
+                    <dt class="fl">&nbsp;</dt>
+                    <dd class="fl">
+                        <h3><span></span>温馨提示</h3>
+                        <p>1. 您的账户资金由第三方平台易宝支付托管。</p>
+                        <p>2. 每日的充值限额依据各银行限额为准；大额充值请使用U盾充值。</p>
+                        <p>3 仅支持储蓄卡/借记卡进行充值，严禁信用卡充值、套现等行为，一经发现将予以处罚，包括但不限于：限制收款、永久停止服务，并会影响银行征信记录。</p>
+                        <p>4. 如充值中出现问题，请联系客服。客服热线：400-010-5577。</p>
+                    </dd>
+                </dl>
+                
+            </div>
+            <!-- 充值 e -->
+            
+            <!-- 提现 s -->
+            <div class="r-renchange-wrap w-withdrawals-wrap boin-con-box" style="display:none;">
+            	
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="fl"><span class="ur-i-t">账户余额：</span></dt>
+                    <dd class="fl" data-count="0.00"><span class="ur-i-m">￥0.00</span></dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="fl"><span class="ur-i-t">提现金额：</span></dt>
+                    <dd class="fl" data-count="0.00">
+                        <input id="reMoney" class="ur-ipt-m" type="text" value="" >
+                        &nbsp;&nbsp;提现金额必须是大于1的整数
+                    </dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="fl"><span class="ur-i-t">手续费：</span></dt>
+                    <dd class="fl" data-count="0.00"><span class="ur-i-rt">2.00 元（易宝支付收取）</span></dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="ur-i-kk fl">
+                    	<p class="u-a-t"><span class="ac-ico"></span>账户实扣款金额：</p>
+                        <div class="f-msg-info">
+                        	<ul>
+                            	<li><span>累计总额：</span><font class="or-color">¥399,9999.00</font></li>
+                            	<li><span>快赚投资本金：</span><font class="or-color">¥39,00.00</font></li>
+                            	<li><span>大赚投资本金：</span><font class="or-color">¥39,00.00</font></li>
+                            	<li><span>特赚投资本金：</span><font class="or-color">¥39,00.00</font></li>
+                            </ul>
+                        	<font class="ac-i-s"><i class="ac-i-c">◇</i></font>
+                        </div>
+                    </dt>
+                    <dd class="fl" data-count="0.00"><span class="ur-i-rt">0.00 元（易宝支付收取）</span></dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="fl"><span class="ur-i-t">提现到：</span></dt>
+                    <dd class="fl" data-count="0.00">
+                        <span class="ur-i-rt">中信银行 | 尾号4636</span>
+                        <span class="ur-i-rt">您未绑定银行卡，<a href="#" class="blue-color">绑定银行卡</a></span>
+                    </dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex">
+                    <dt class="fl">&nbsp;</dt>
+                    <dd class="fl"><input id="urBtnWhi" class="ur-btn-rec" type="submit" value="提现" /> <span class="b-disabled">提现</span></dd>
+                </dl>
+                
+                <dl class="ur-item-wrap clearFiex ur-bank-txtmark">
+                    <dt class="fl">&nbsp;</dt>
+                    <dd class="fl">
+                        <h3><span></span>温馨提示</h3>
+                        <p>1. 提现银行卡姓名应与实名认证身份一致，才可提现。</p>
+                        <p>2. 提现到账时间：T+1工作日完成（遇周末和法定节假日顺延）。</p>
+                        <p>3 解绑提现银行卡，需提供：1）投资人彩色手持身份证照【身份证要清晰】;2）投资人原卡照片及卡号至：lckefu@hxsongshu.com。</p>
+                        <p>4. 如有问题，请重试或联系松鼠金融客服（400-010-5577）。</p>
+                    </dd>
+                </dl>
+                
+            </div>
+            <!-- 提现 e -->
+		</div>
+    </div>
+    
+    <div class="hr90"></div>
+</div>
+<div id="footer">
+	<div class="footer-links">
+    	<div class="comWidth clearFiex">
+        	<div class="footer-dl-box fl">
+                <dl>
+                    <dt><a href="#" target="_blank">关于我们</a></dt>
+                    <dd><a href="#" target="_blank">公司介绍</a></dd>
+                    <dd><a href="#" target="_blank">平台公告</a></dd>
+                    <dd><a href="#" target="_blank">加入我们</a></dd>
+                    <dd><a href="#" target="_blank">联系我们</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#" target="_blank">安全保障</a></dt>
+                    <dd><a href="#" target="_blank">债权保障</a></dd>
+                    <dd><a href="#" target="_blank">平台保障</a></dd>
+                    <dd><a href="#" target="_blank">技术保障</a></dd>
+                    <dd><a href="#" target="_blank">法律保障</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#" target="_blank">帮助中心</a></dt>
+                    <dd><a href="#" target="_blank">新手指引</a></dd>
+                    <dd><a href="#" target="_blank">常见问题</a></dd>
+                    <dd><a href="#" target="_blank">名词解释</a></dd>
+                </dl>
+            </div>
+            <div class="contact-information fl">
+            	<div class="c-i-item ci-lc">
+                	<p class="c-i-title">理财服务热线：</p>
+                    <p class="c-i-info">400-010-5577</p>
+                </div>
+                <div class="c-i-item">
+                	<p class="c-i-title">理财服务热线：</p>
+                    <p class="c-i-info">400-010-5577</p>
+                </div>
+            </div>
+            <ul class="f-qr-list">
+            	<li>
+                	<img src="images/QRS/licaifuwuhao.jpg" alt="" />
+                    <p>理财－微信服务号</p>
+                </li>
+            	<li>
+                	<img src="images/QRS/licaiApp.jpg" alt="" />
+                    <p>理财－客户端下载</p>
+                </li>
+            	<li>
+                	<img src="images/QRS/jiekuanApp.jpg" alt="" />
+                    <p>借款－微信服务号</p>
+                </li>
+            	<li>
+                	<img src="images/QRS/jiekuanfuwu.jpg" alt="" />
+                    <p>借款－微信服务号</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom-info">
+    	<p class="comWidth">北京恒善信诚科技有限公司&nbsp;&nbsp;&nbsp;©2015 songshubank.com&nbsp;All Rights Reserved&nbsp;&nbsp;&nbsp;京ICP备15037970号&nbsp;&nbsp;&nbsp;京公网安备11010802018006</p>
+        <div class="footer-verification-v">
+        	<a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+            <a href="#" target="_blank" rel="external nofollow"><img src="images/content/360.png" alt="" /></a>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/sea.js"></script>
+<script>
+seajs.config({
+    alias: {
+      'jquery': './js/jquery-1.11.1.min',
+      'pop': './js/BombBox'
+    }
+});
+
+seajs.use(['jquery',"./js/acCommon",'pop'],function(a,b,c){
+
+    b.tNavList();
+    
+    //账户中心导航
+    b.acNav();
+    
+    //我的账户
+    b.userArea();
+    
+    var oBtn = document.getElementById("urBtnRec");
+
+    oBtn.onclick = function(){
+
+    var b1 = new BombBox();
+        b1.init({
+            iNow : 0,
+            title : "请在新打开的易宝页面完成充值",
+            w : 380,
+            h: 240,
+            dir :"center",
+            mark : true,
+            btn :true,
+            confi : function(){
+                alert("操作成功")
+            },
+            cancel : function(){
+                alert("已经取消")
+            },
+			confiTxt: "充值成功",
+			cancelTxt:"充值失败",
+			confiBtnTxt: "确认成功",
+			cancelBtnTxt:"重新充值"
+        });     
+    }
+    
+	var oBtnW = document.getElementById("urBtnWhi");
+	oBtnW.onclick = function(){
+
+		var b2 = new BombBox();
+		b2.init({
+			iNow : 0,
+			title : "请在新打开的易宝页面完成提现",
+			w : 380,
+			h: 240,
+			dir :"center",
+			mark : true,
+			btn :true,
+			confi : function(){
+				alert("操作成功")
+			},
+			cancel : function(){
+				alert("已经取消")
+			},
+			confiTxt: "提现成功",
+			cancelTxt:"提现失败",
+			confiBtnTxt: "确认成功",
+			cancelBtnTxt:"重新提现"
+		});     
+    }
+	
+	//状态选择
+	b.fnTab($(".boin-tab"),$(".u-oper-box"),"click");
+
+	//$.valiFloat($("#reMoney"))
+	//实例化
+   	var t1= new tabs( $(".c-i-tabs ul") , $('.b-line') , 0 );
+	t1.init();
+	
+	var t2= new tabs( $(".c-t-tabs ul") , $('.i-or-block') , 63 );
+	t2.init();
+
+})
+</script>
+</html>
